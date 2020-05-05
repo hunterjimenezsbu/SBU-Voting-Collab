@@ -5,7 +5,7 @@ export default class Menu extends Component {
         return (
             <div className = "buttonHolder">
               <p id="p">Would you like to register to vote with a on campus address?</p>
-                <Button id = "OnCampus" className = "menuButton" onClick = "https://form.jotform.com/201176351642146">Yes</Button>
+                <Button id = "OnCampus" className = "menuButton" onClick ="location.href='https://form.jotform.com/201176351642146';">Yes</Button>
                 <Button id = "OffCampus" className = "menuButton" onClick = {(e)=>this.props.changeScreen('registerToVote')}>No</Button>
                 
         )
