@@ -4,6 +4,7 @@ import VoterStatusScreen from './screens/VoterStatusScreen';
 import AbsenteeScreen from './screens/AbsenteeScreen';
 import ChatScreen from './screens/ChatScreen';
 import RegisterScreen from './screens/RegisterScreen';
+import OnCampus from './screens/OnCampus'
 import {Button, Icon} from 'react-materialize';
 export default class DisplaySwitcher extends Component {
     constructor(props) {
@@ -35,6 +36,14 @@ export default class DisplaySwitcher extends Component {
             )
         }
         else if(this.state.page === 'absenteeVoting'){
+            return(
+                <div>
+                    <Button className = "homeButton" onClick = {(e)=>this.changeScreen("menu")}><Icon>arrow_back_ios</Icon></Button>
+                    <AbsenteeScreen/>
+                </div>
+            )
+        }
+        else if(this.state.page === 'OnCampus'){
             return(
                 <div>
                     <Button className = "homeButton" onClick = {(e)=>this.changeScreen("menu")}><Icon>arrow_back_ios</Icon></Button>
