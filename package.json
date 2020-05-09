@@ -1,6 +1,6 @@
 {
   "name": "voting-website",
-  "homepage": "http://hunterjimenezsbu.github.io/hunterjimenez.github.io",
+  "homepage": "http://hunterjimenezsbu.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,8 +16,8 @@
     "eject": "react-scripts eject",
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "predeploy": "yarn run build",
+  "deploy": "gh-pages -b master -d build"
   },
   "proxy": "http://localhost:3001",
   "eslintConfig": {
