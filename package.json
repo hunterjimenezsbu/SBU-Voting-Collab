@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
   "deploy": "gh-pages -b master -d build"
   },
   "proxy": "http://localhost:3001",
